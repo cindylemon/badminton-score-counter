@@ -28,13 +28,22 @@ public class scoreCounter {
         Scanner scan = new Scanner(System.in);
         int selection = numInput(scan, 1, 2, "Select 1 for singles and 2 for doubles");
         if (selection == 1) {
-            System.out.println("What is player 1's name?");
+            System.out.println("What is Player A's name?");
             Scanner name = new Scanner(System.in);
             team1 = name.nextLine();
-            System.out.println("What is player 2's name?");
+            System.out.println("What is Player B's name?");
             team2 = name.next();
         } else {
-            // concatenate the names
+        	System.out.println("What is player 1 on Team A's name?");
+            Scanner name = new Scanner(System.in);
+            team1 = name.nextLine();
+            System.out.println("What is player 2 on Team A's name?");
+            team1 = team1 + name.nextLine();          // concatenate the names
+            System.out.println("What is player 1 on Team B's name?");
+            team2 = name.nextLine();
+            System.out.println("What is player 2 on Team B's name?");
+            team2 = team2 + name.nextLine();          // concatenate the names
+            System.out.println(team1 + team2);
         }
     }
 
