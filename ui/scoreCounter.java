@@ -17,6 +17,7 @@ public class scoreCounter {
         set = 0;
         team1Points = 0;
         team2Points = 0;
+        String test = "test";
     }
 
     void init() {
